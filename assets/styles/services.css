@@ -1,0 +1,85 @@
+.services{
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    height: 250px;
+    background: #fff3f3;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 2rem;
+}
+.services__text{
+    position: absolute;
+    white-space: nowrap;
+}
+.services__text--right {
+    right: 0;
+    top: 11rem;
+    animation: moveRight 30s linear infinite;
+}
+.services__text--left {
+    left: 0;
+    top: 6rem;
+    animation: moveLeft 30s linear infinite;
+}
+@keyframes moveRight {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    100% {
+        transform: translate3d(50%,0,0);
+    }
+}
+@keyframes moveLeft {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    100% {
+        transform: translate3d(-50%,0,0);
+    }
+}
+.services-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    position: relative;
+}
+.services-wrapper > h1 {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+.container-service {
+    width: 100%;
+    padding: 30px 4px;
+    margin: 4px auto;
+}
+.container-service > h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    margin: 20px auto;
+}
+.service-body {
+    padding: 20px 4px;
+    width: 100%;
+    margin: 15px 5px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 35px;
+    margin: auto;
+}
+.service-body img {
+    float: left;
+    position: relative;
+    margin: 20px 20px;
+    width: 400px;
+    object-fit: cover;
+    vertical-align: top;
+}
+.service-list li {
+    padding: 5px;
+    margin-bottom: 5px;
+}

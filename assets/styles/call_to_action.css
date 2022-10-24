@@ -1,0 +1,22 @@
+.cta {
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/landing_cta/213.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 4px;
+}
+.cta h1{
+    color: #ffff;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 500;
+    padding: 0;
+}
+@media (max-width: 700px) {
+    .cta h1{
+        font-size: 27px;
+    }
+}

@@ -1,0 +1,78 @@
+.partners {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 4px;
+    position: relative;
+}
+.partners > h1 {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 600;
+}
+.associate {
+    display: flex;
+    gap: 4px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 2px auto;
+    padding-top: 50px;
+}
+@media (max-width: 700px) {
+    .associate {
+        flex-direction: column;
+    }
+}
+.associate .card {
+    flex-basis: 35%;
+    margin: 4px 20px;
+    text-align: start;
+    padding: 3px 2px;
+}
+.associate .card img {
+    object-fit: cover;
+    width: 100%;
+
+}
+.card .name {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 2px;
+    text-align: start;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+}
+.card .pos,
+.card .tel,
+.card .email {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: start;
+    padding: 2px;
+    font-style: italic;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+}
+.associate .biography {
+    flex-basis: 62%;
+    text-align: center;
+}
+.bio {
+    padding: 20px 5px;
+    text-align: start;
+    font-size: 16px;
+    margin: 3px 0;
+}
+.expertise,
+.qualification {
+    margin: 4px auto;
+    padding: 30px 5px;
+}
+.expertise h2,
+.qualification h2  {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}

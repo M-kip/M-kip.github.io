@@ -1,0 +1,181 @@
+.about {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.about .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: #fff3f3;
+
+}
+.about .column {
+    flex-basis: 44%;
+    margin-left: 2px;
+    margin-top: 100px;
+    border-radius: 2%;
+    text-align: center;
+}
+.about .column h1 {
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 40px;
+}
+.about .column p {
+    line-height: 35px;
+    font-weight: 300;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+.about img{
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width: 700px) {
+    .about .row {
+        flex-direction: column;
+        margin-left: 2px;
+        padding: 2px 3px;
+        width: 100%;
+    }
+    .about h1 {
+        font-size: 30px;
+        text-align: start;
+    }
+    .about .column {
+        flex-basis: 100%;
+    }
+    .about .column p {
+        padding: 0px;
+    }
+}
+.about-btn {
+    margin-top: 30px;
+    color: black;
+    border: 1px solid #111;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.about-btn::after,
+.about-btn::before
+ {
+    color: #111;
+    background: #111;
+}
+.about-btn:hover {
+    background:rgba(22, 6, 6, 0.7);
+    box-shadow: 0 0 5px 0 rgba(82, 7, 7, 0.7);
+}
+.mission-container {
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/shapes/169.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    font-weight: 400;
+}
+.mission-container h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 20px auto;
+}
+.mission-container p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 20px auto;
+}
+.vision-container {
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/shapes/169.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    font-weight: 400;
+}
+.vision-container h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 20px auto;
+}
+.vision-container p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 20px auto;
+}
+.banner {
+    width: 80%;
+    padding: 100px 5px;
+    margin: 20px auto;
+    background: #fff3f3;
+}
+.banner-row {
+    display: flex;
+    gap: 3px;
+}
+.banner-column {
+    padding: 5px;
+    text-align: center;
+}
+.banner-column img {
+    width: 600px;
+    object-fit: cover;
+    display: block;
+    
+}
+.banner-column h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 30px auto;
+}
+.banner-column li {
+    line-height: 21px;
+    padding-top: 30px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.client-base {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 5px;
+    position: relative;
+    text-align: center;
+}
+.client-base > div {
+    margin: 30px auto;
+    padding: 50px 5px;
+    text-align: center;
+    background: #fff3f3;
+}
+.client-base > div:hover {
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.7);
+}
+.client-base > div h1 {
+    font-weight: 600;
+    font-size: 27px;
+    padding: 20px 1px;
+}
+.client-base > div p {
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px 4px;
+    text-align: center;
+}

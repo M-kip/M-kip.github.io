@@ -1,0 +1,70 @@
+.offices{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.offices h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+.offices .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding:10px;
+}
+.offices .column{
+    flex-basis: 31%;
+    border-radius: 2%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.offices img{
+    width: 100%;
+    display: block;
+    height: 400px;
+    object-fit: cover;
+}
+.offices .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background 0.4s linear;
+}
+.offices .layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.offices .layer h3{
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.4s linear;
+}
+.offices .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+@media (max-width: 700px){
+    .offices .row{
+        flex-direction: column;
+        width: 100%;
+    }
+    .offices .column{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .offices {
+        width: 100%;
+    }
+}

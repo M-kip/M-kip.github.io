@@ -1,0 +1,29 @@
+.vision p{
+    font-size: 20px;
+    line-height: 40px;
+    padding: 50px;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 2%;
+}
+.vision h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.vision {
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.vision:hover{
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.7);
+}
+@media (max-width: 700px ) {
+   .vision p {
+    font-size: 18px;
+    padding: 3px;
+   } 
+}

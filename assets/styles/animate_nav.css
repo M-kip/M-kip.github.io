@@ -1,0 +1,95 @@
+.link{
+    position: relative;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 400;
+}
+.link::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    color: currentColor;
+    background-color: rgb(14, 13, 13);
+    transform: scale3d(0,1,1);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: right;
+}
+.link:hover::before{
+    transform: scale3d(1,1,1);
+    transform-origin: left;
+}
+.link::after{
+    position: absolute;
+    content: attr(data-text);
+    top: 0;
+    height: 100%;
+    transform: translate3d(150%,0,0);
+    transition: transform 0.3s ease-in-out;
+}
+.link span{
+    transition: transform 0.3s ease-in-out;
+}
+.link:hover::after{
+    transform: translate3d(0,0,0);
+    color: #f5e2e2;
+    font-weight: 500;
+}
+.link:hover span{
+    transform: translate3d(-150%,0,0);
+    color:rgb(240, 224, 224);
+    font-weight: 500;
+}
+.btn-contact{
+    position: relative;
+    border: none;
+    height: 130px;
+    width: 165px;
+    background: none;
+    color: #fff;
+}
+.btn-contact > span{
+    mix-blend-mode: difference;
+    font-weight: 500;
+    font-size: 20px;
+}
+.btn-contact::before,
+.btn-contact::after{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn-contact::after{
+    content: "";
+    border: 2px solid #fff;
+    height: 95%;
+    width: 97%;
+    border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
+    transform: rotate(-20deg);
+    transition: transform .5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
+}
+.btn-contact::before{
+    content: "";
+    background: #fff;
+    clip-path: path("M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z");
+    transition:  0.4s cubic-bezier(0.585, 2.5, 0.645, 0.55);
+}
+.btn-contact:hover::before{
+    clip-path: path("M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z");
+    background: #0000ff;
+}
+.btn-contact:hover::after{
+    transform: translate3d(10px,-15px,0);
+}
+@media (max-width: 800px){
+    .btn-contact{
+        transform: scale3d(0.7,0.7,0.7);
+        font-size: 25px;
+    }
+}

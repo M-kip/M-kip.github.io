@@ -1,0 +1,68 @@
+/* imports */
+@import url(landing.css);
+@import url(header.css);
+@import url(animate_nav.css);
+@import url(hero.css);
+@import url(services.css);
+@import url(service-grid.css);
+@import url(vision.css);
+@import url(offices.css);
+@import url(testimonials.css);
+@import url(call_to_action.css);
+@import url(hero-btn.css);
+@import url(footer.css);
+@import url(mission.css);
+@import url(about.css);
+@import url(contact.css);
+@import url(blog.css);
+@import url(socials.css);
+@import url(faq.css);
+@import url(partners.css);
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+html,
+body{
+    overflow-x: hidden;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+button,
+select,
+input,
+textarea{
+    font:inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    overflow-wrap: break-word;
+}
+img,
+video,
+svg,
+canvas{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+    color: inherit;
+}

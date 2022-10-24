@@ -1,0 +1,78 @@
+.contact {
+    width: 80%;
+    margin: auto 50px;
+    padding: 7px 12px;
+}
+.contact .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+.contact .column {
+    flex-basis: 44%;
+    padding: 5px 7px;
+    margin: 5px 7px;
+}
+@media (max-width: 700px) {
+    .contact .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact {
+        margin-left: 3px;
+        width: 100%;
+    }
+    .contact .column {
+        flex-basis: 100%;
+        padding: 5px 7px;
+        margin: 5px 7px;
+    }
+}
+.contact .inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 2px;
+}
+.contact .inputs input,
+.contact .inputs textarea {
+    width: 100%;
+    margin: 5px 20px;
+    display: inline-block;
+}
+.frm-btn {
+    margin-top: 30px;
+    color: black;
+    border: 1px solid #111;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.frm-btn::after,
+.frm-btn::before
+{
+    color: #111;
+    background: #111;
+}
+.frm-btn:hover {
+    background:rgba(22, 6, 6, 0.7);
+    box-shadow: 0 0 5px 0 rgba(82, 7, 7, 0.7);
+}
+.contact .icons {
+    margin-top: 40px;
+}
+.contact .icons span {
+    font-size: 25px;
+    font-weight: 300;
+}
+.contact .icons li {
+    display: block;
+    margin: 4px 7px;
+    
+}
+.contact .icons i {
+    color: #f44236;
+    margin-right: 5px;
+}
